@@ -33,7 +33,5 @@ selectAll = db.execute "SELECT * FROM contacts"
 print selectAll
 puts ""
 
-
-
-
+#fermeture de la base de donnée
 db.close
