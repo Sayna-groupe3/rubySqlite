@@ -18,16 +18,20 @@ puts "recuperation de tt les contacts enregister"
 selectAll = db.execute "SELECT * FROM contacts"
 print selectAll
 puts "\n========================================================"
+
 #modification du contact avec id = 2
 puts "modification du contacts avec id = 2"
 db.execute "UPDATE contacts SET name = 'test', adress = 'tanjobato' WHERE id = 2"
+
 #recuperation de tout les contact enregistrer 
 selectAll = db.execute "SELECT * FROM contacts"
 print selectAll
 puts "\n======================================================="
+
 #suppression du contact avec  id = 4
 puts "suppression du contact avec  id = 4"
 db.execute "DELETE FROM contacts WHERE id=4"
+
 #recuperation de tout les contact enregistrer 
 selectAll = db.execute "SELECT * FROM contacts"
 print selectAll
